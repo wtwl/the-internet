@@ -9,4 +9,7 @@ def test_google():
         driver.get('https://google.com')
 
     with allure.step('Проверяю что url содержит google.com'):
-        assert_that(driver.current_url).contains('gom')
+        assert_that(driver.current_url).contains('google.com')
+
+    with allure.step('Проверяю что url содержит google.com'):
+        assert_that(driver.current_url).contains('google.com')
